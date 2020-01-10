@@ -1,0 +1,21 @@
+DROP DATABASE IF EXISTS gallery_db;
+CREATE DATABASE gallery_db;
+
+CREATE TABLE users (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  username VARCHAR(255),
+  password VARCHAR(255),
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE photos (
+ id INT(11) NOT NULL AUTO_INCREMENT,
+ title VARCHAR(255) NOT NULL,
+ description TEXT NOT NULL,
+ filename VARCHAR(255) NOT NULL,
+ type VARCHAR(255) NOT NULL,
+ size INT(11) NOT NULL,
+ PRIMARY KEY (id)
+);
